@@ -4,15 +4,15 @@ module.exports = {
   mode: "none",
   entry: "./index.js",
   output: {
-    filename: "[chunkhash].js",
+    filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
-      },
-    ],
-  },
+  //   module: {
+  //     rules: [
+  //       {
+  //         test: /\.css$/,
+  //         use: ["style-loader", "css-loader"],
+  //       },
+  //     ],
+  //   },
 };
